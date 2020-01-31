@@ -244,6 +244,10 @@ TARGET_HAS_NO_POWER_STATS := true
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# RIL
+TARGET_RIL_VARIANT := caf
+BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 

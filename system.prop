@@ -108,7 +108,18 @@ ro.core_ctl_min_cpu=0
 ro.core_ctl_max_cpu=4
 
 # Radio
-ro.radio.noril=1
+persist.data.qmi.adb_logmask=0
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+ro.telephony.call_ring.multiple=false
+ro.use_data_netmgrd=true
+persist.data.target=dpm1
+persist.radio.no_cons_man_roam=1
+persist.radio.sib16_support=1
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999
+ril.ecclist1=000,08,100,101,102,110,112,118,119,120,122,911,999
+ro.telephony.ril.config=simactivation
 
 # Wi-Fi
 wifi.interface=wlan0
