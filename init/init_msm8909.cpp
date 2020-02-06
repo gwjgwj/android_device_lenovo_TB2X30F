@@ -111,6 +111,9 @@ void set_fingerprint()
 
     property_override("ro.build.description", 
         "msm8909-user 6.0.1 LenovoTB-X103F TB-X103F_S000038_180317_ROW release-keys");
+
+	property_override("ro.vendor.build.fingerprint", 
+        "Lenovo/TB-X103F/TB-X103F:6.0.1/LenovoTB-X103F/TB-X103F_S000038_180317_ROW:user/release-keys");
 }
 
 void set_sn()
