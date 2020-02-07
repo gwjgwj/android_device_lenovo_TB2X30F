@@ -19,13 +19,6 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=128m \
-    dalvik.vm.heapminfree=6m \
-    dalvik.vm.heapstartsize=14m
-
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -165,10 +158,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-legacymm
-
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
@@ -236,10 +225,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:system/etc/sensors/hals.conf
-
-#Tablet WIFI Only
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.carrier=wifi-only
 
 # Thermal
 PRODUCT_COPY_FILES += \
