@@ -188,6 +188,9 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += \
 #    $(PLATFORM_PATH)/sepolicy
 
+# RIL
+BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11
+
 # Enable sensor multi HAL
 USE_SENSOR_MULTI_HAL := true
 
