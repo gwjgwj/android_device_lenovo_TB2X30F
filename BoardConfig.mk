@@ -17,7 +17,7 @@
 
 FORCE_32_BIT := true
 
-DEVICE_PATH := device/lenovo/TB2-X30L
+DEVICE_PATH := device/lenovo/TB2X30L
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8909
@@ -269,4 +269,4 @@ endif
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Inherit from proprietary files
-include vendor/lenovo/TB2-X30L/BoardConfigVendor.mk
+include vendor/lenovo/TB2X30L/BoardConfigVendor.mk
