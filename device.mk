@@ -350,4 +350,4 @@ PRODUCT_PACKAGES += \
     keystore.default
 
 # Call the proprietary setup
-$(call inherit-product, vendor/lenovo/x103f/x103f-vendor.mk)
+$(call inherit-product, vendor/lenovo/TB2-X30L/TB2-X30L-vendor.mk)
