@@ -18,12 +18,12 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from x103f device
-$(call inherit-product, device/lenovo/TB2-X30L/device.mk)
+$(call inherit-product, device/lenovo/TB2X30L/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := full_TB2-X30L
+PRODUCT_NAME := full_TB2X30L
 PRODUCT_BRAND := lenovo
-PRODUCT_DEVICE := TB2-X30L
+PRODUCT_DEVICE := TB2X30L
 PRODUCT_MODEL := TAB2A10-30
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_CHARACTERISTICS := tablet
