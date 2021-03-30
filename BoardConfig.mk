@@ -17,7 +17,7 @@
 
 FORCE_32_BIT := true
 
-DEVICE_PATH := device/lenovo/x103f
+DEVICE_PATH := device/lenovo/TB2-X30L
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8909
@@ -84,7 +84,7 @@ TARGET_USE_VENDOR_CAMERA_EXT := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
-TARGET_OTA_ASSERT_DEVICE := msm8909,x103f
+TARGET_OTA_ASSERT_DEVICE := msm8909,x103f,TB2-X30L,TB2X30L,TB2-X30F,TB2X30F,achilles
 
 # Dexpreopt
 # Always preopt extracted APKs to prevent extracting out of the APK
@@ -269,4 +269,4 @@ endif
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Inherit from proprietary files
-include vendor/lenovo/x103f/BoardConfigVendor.mk
+include vendor/lenovo/TB2-X30L/BoardConfigVendor.mk
