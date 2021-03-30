@@ -15,4 +15,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_TB2-X30L.mk
+    $(LOCAL_DIR)/lineage_TB2X30L.mk
