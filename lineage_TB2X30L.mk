@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/lenovo/TB2-X30L/full_TB2-X30L.mk)
+$(call inherit-product, device/lenovo/TB2X30L/full_TB2X30L.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -21,9 +21,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8909
 
-PRODUCT_NAME := lineage_TB2-X30L
+PRODUCT_NAME := lineage_TB2X30L
 BOARD_VENDOR := lenovo
-PRODUCT_DEVICE := TB2-X30L
+PRODUCT_DEVICE := TB2X30L
 PRODUCT_MODEL := TAB2A10-30
 PRODUCT_MANUFACTURER := lenovo
 
