@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), x103f)
+ifeq ($(TARGET_DEVICE), TB2-X30L)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
