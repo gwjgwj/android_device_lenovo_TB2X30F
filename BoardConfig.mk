@@ -49,7 +49,7 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 #AUDIO_FEATURE_ENABLED_HFP := true
 #AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 BOARD_USES_ALSA_AUDIO := true
-BOARD_SUPPORTS_SOUND_TRIGGER := true
+#BOARD_SUPPORTS_SOUND_TRIGGER := true
 #USE_CUSTOM_AUDIO_POLICY := 1
 #USE_XML_AUDIO_POLICY_CONF := 1
 
@@ -184,9 +184,10 @@ MALLOC_SVELTE := true
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cm
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += \
-#    $(PLATFORM_PATH)/sepolicy
+include device/qcom/sepolicy/sepolicy.mk
+
+BOARD_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy
 
 # RIL
 BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11
